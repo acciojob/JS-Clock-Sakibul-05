@@ -8,8 +8,8 @@ setInterval(() => {
     let currentMinute = date.getMinutes();
     let currentSecond = date.getSeconds();
     // console.log(currentHour, ":", currentMinute," : ", currentSecond)
-    let hourHandRotation = currentHour*30 + currentMinute/2;
-    let minuteHandRotation = currentMinute*6;
+    let hourHandRotation = currentHour*30 + currentMinute/2 + currentSecond/120;
+    let minuteHandRotation = currentMinute*6 + currentSecond/10;
     let secondHandRotation = currentSecond*6;
     //console.log(hourHandRotation, ":", minuteHandRotation," : ", secondHandRotation);
     hourHand.style.transform = `rotate(${90+hourHandRotation}deg)`
