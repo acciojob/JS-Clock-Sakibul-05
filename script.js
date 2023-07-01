@@ -11,7 +11,7 @@ setInterval(() => {
     let hourHandRotation = currentHour*30 + currentMinute/2;
     let minuteHandRotation = currentMinute*6;
     let secondHandRotation = currentSecond*6;
-    console.log(hourHandRotation, ":", minuteHandRotation," : ", secondHandRotation);
+    //console.log(hourHandRotation, ":", minuteHandRotation," : ", secondHandRotation);
     hourHand.style.transform = `rotate(${90+hourHandRotation}deg)`
     minuteHand.style.transform = `rotate(${90+minuteHandRotation}deg)`
     secondHand.style.transform = `rotate(${90+secondHandRotation}deg)`
